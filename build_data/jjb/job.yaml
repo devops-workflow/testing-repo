@@ -1,0 +1,22 @@
+- job:
+    name: workflow_feature_testing
+    description: |
+        <p>Job for testing new workflow features</p>
+    properties:
+      - github:
+          url: https://github.com/devops-workflow/testing-repo/
+      - 'custom-icon':
+          custom-icon: button-test.png
+    scm:
+      - 'github':
+          github-repo: testing-repo
+          github-url: https://github.com
+          github-org: devops-workflow
+    builders:
+      - syntax-bash:
+      - remote-jjb-definition:
+    publishers:
+      - warnings:
+          console-log-parsers:
+            - "Custom Bash Syntax"
+
