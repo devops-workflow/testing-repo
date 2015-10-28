@@ -1,4 +1,17 @@
-- job:
+- project:
+    name: remote-job
+    link_1:
+      name: Project Confluence
+      url: http://url.com
+      icon: confluence.png
+    link_2:
+      name: Project Test
+      url: http://url.com
+      icon: button-test.png
+    jobs:
+      - workflow_feature_testing
+
+- job-template:
     name: workflow_feature_testing
     description: |
         <p>Job for testing new workflow features</p>
@@ -15,6 +28,10 @@
     builders:
       - syntax-bash:
       - remote-jjb-definition:
+      - anchorchain-file:
+         anchorchain-links:
+            - link: '{obj:link_1}'
+            - link: '{obj:link_2}'
     publishers:
       - warnings:
           console-log-parsers:
