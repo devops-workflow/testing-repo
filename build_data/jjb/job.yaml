@@ -33,7 +33,11 @@
             - link: '{obj:link_1}'
             - link: '{obj:link_2}'
     publishers:
+      - 'anchorchain':
+          anchorchain-file: anchor
       - warnings:
           console-log-parsers:
             - "Custom Bash Syntax"
+      - 'project-desc':
+          desc-file: project_description
 
