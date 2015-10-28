@@ -38,6 +38,7 @@
       - warnings:
           console-log-parsers:
             - "Custom Bash Syntax"
+    wrappers:
       - 'project-desc':
           desc-file: project_description
 
