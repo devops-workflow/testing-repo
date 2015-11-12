@@ -13,8 +13,6 @@
 
 - job-template:
     name: workflow_feature_testing
-    description: |
-        <p>Job for testing new workflow features</p>
     properties:
       - github:
           url: https://github.com/devops-workflow/testing-repo/
@@ -28,6 +26,7 @@
     builders:
       - syntax-bash:
       - remote-jjb-definition:
+      - job-description:
       - anchorchain-file:
          anchorchain-links:
             - link: '{obj:link_1}'
