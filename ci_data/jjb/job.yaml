@@ -34,9 +34,9 @@
     publishers:
       - 'anchorchain':
           anchorchain-file: anchor
-      - warnings:
-          console-log-parsers:
-            - "Custom Bash Syntax"
+#      - warnings:
+#          console-log-parsers:
+#            - "Custom Bash Syntax"
     wrappers:
       - 'project-desc':
           desc-file: project_description
