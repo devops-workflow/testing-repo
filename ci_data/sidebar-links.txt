@@ -1,1 +1,1 @@
-Link Name,http://url.com,test.png
+Link Name;http://url.com;test.png
