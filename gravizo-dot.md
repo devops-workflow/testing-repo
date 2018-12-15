@@ -1,4 +1,8 @@
-![Alt text](https://g.gravizo.com/svg?
+# Gravizo dot graphs
+
+[Github example](https://github.com/TLmaK0/gravizo)
+
+![Gravizo dot graph](https://g.gravizo.com/svg?
   digraph G {
     aize ="4,4";
     main [shape=box];
