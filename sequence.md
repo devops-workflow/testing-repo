@@ -1,7 +1,8 @@
 # Sequence graphs
 ​
-```sequence
-Alice->Bob: Hello Bob, how are you?
-Note right of Bob: Bob thinks
-Bob-->Alice: I am good thanks!
+```sequence {theme="hand"}
+Alice->China: Says hello
+Note right of Alice: China thinks\nabout it
+China-->Alice: How are you?
+Alice->>China: I am good thanks!
 ​```
