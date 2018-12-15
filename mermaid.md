@@ -1,4 +1,3 @@
-
 # Mermaid graphs
 
 ```mermaid
